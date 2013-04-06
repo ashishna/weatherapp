@@ -37,7 +37,7 @@ Additional Notes
 ----------------
 1) The application can be imported into eclipse IDE by generating artifacts with command.<br />
 
-	mvn eclipse:eclipse -DdownloadSources=false <br/>
+	mvn eclipse:eclipse -DdownloadSources=false
 
 2) I have used JSR-303 based bean validation framework for basic validations. The annotated bean name is InputForm.java.<br />
 3) Since spring-mvc-test is not production ready, I have used milestone 2 (M2) release of the jar and added the repository configuration for it. The repository details are taken from the net.<br />
