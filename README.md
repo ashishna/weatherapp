@@ -20,7 +20,7 @@ Build and Deploy the Application
 
         mvn clean compile package
 
-	mvn tomcat:run
+	<code>mvn tomcat:run</code>
 
 The first run will download all the necessary artifacts used in the application and user must be connected to the internet and with access to the maven repositories.
 
