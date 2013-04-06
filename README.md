@@ -36,10 +36,12 @@ The application will be running at the following URL: <http://localhost:8080/wea
 Additional Notes
 ----------------
 1) The application can be imported into eclipse IDE by generating artifacts with command.<br />
+
 	mvn eclipse:eclipse -DdownloadSources=false <br/>
+
 2) I have used JSR-303 based bean validation framework for basic validations. The annotated bean name is InputForm.java.<br />
 3) Since spring-mvc-test is not production ready, I have used milestone 2 (M2) release of the jar and added the repository configuration for it. The repository details are taken from the net.<br />
-4) For loading webcontext in the unit tests, I have used a class named "GenericWebContextLoader" directly from spring source code (as I have used it successfully in earlier projects as well and take the same class from those projects).<br />
+4) For loading webcontext in the unit tests, I have used a class named "GenericWebContextLoader" directly from spring source code (as I have used it successfully in earlier projects as well and taken the same class from those projects).<br />
 5) I have consumed JSON service for sake of simplicity and Jackson Mapper inbuilt support in Spring framework. XML parsing is a bit heavy for this particular operation and since we dont need to validate the response and in my opinion, JAXB would have been an overkill for this application. I have used Jackson API for mapping the partial response (the one which we are interested in) from the web-service.<br />
 6) I have not built exception handling framework related to network errors and not written tests for the same. </br />
 7) I have used Mockito for mocking some MVC related stuff.
