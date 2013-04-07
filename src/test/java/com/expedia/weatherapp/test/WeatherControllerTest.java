@@ -16,7 +16,6 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.web.server.MockMvc;
 import org.springframework.test.web.server.setup.MockMvcBuilders;
-import org.springframework.web.client.RestTemplate;
 import org.springframework.web.context.WebApplicationContext;
 
 import com.expedia.weatherapp.config.ViewConfiguration;
@@ -31,9 +30,6 @@ public class WeatherControllerTest {
 	
 	@Autowired
 	private WebApplicationContext context;
-	
-	@Autowired
-	private RestTemplate restTemplate;
 	
 	@Before
 	public void setup() {
@@ -89,3 +85,4 @@ public class WeatherControllerTest {
 		mockMvc = null;
 	}
 }
+
