@@ -52,3 +52,5 @@ Additional Notes
 	Browser Used: Google Chrome 24.0<br />
 	JDK: Version 1.7, update:10<br />
 	Spring framework: Current Version (3.2.2)<br />
+9) I have not used logging just for the sake of clarity, but provided log4J to enable/disable spring logs. <br />
+10) As per the new servlet Specifications, I have not used the annotations based servelt configuration and hense did not use WebApplicationInitializer for bootstraping the application. I have stick to the classic way with web.xml file only.
