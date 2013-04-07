@@ -18,11 +18,12 @@ import org.springframework.test.web.server.MockMvc;
 import org.springframework.test.web.server.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
+import com.expedia.weatherapp.config.RootConfiguration;
 import com.expedia.weatherapp.config.ViewConfiguration;
 import com.expedia.weatherapp.test.config.WebContextLoader;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = {ViewConfiguration.class}, loader = WebContextLoader.class)
+@ContextConfiguration(classes = {RootConfiguration.class , ViewConfiguration.class}, loader = WebContextLoader.class)
 
 public class WeatherControllerTest {
 

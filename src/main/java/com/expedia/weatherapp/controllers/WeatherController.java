@@ -38,8 +38,6 @@ public class WeatherController {
             return  modelAndView;
         }
 		
-		
-		
 		ServiceResponse response = weatherService.getWeather(inputForm.getZipCode());
 		if(null != response) {
 			if(null  == response.getResponse().getError()) {

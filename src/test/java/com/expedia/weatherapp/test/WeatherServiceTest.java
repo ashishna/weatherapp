@@ -1,7 +1,9 @@
 package com.expedia.weatherapp.test;
 
+import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertNotNull;
+import static junit.framework.Assert.assertNull;
 import static org.mockito.Matchers.anyString;
-import static junit.framework.Assert.*;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,13 +11,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.expedia.weatherapp.config.RootConfiguration;
 import com.expedia.weatherapp.config.ViewConfiguration;
 import com.expedia.weatherapp.service.WeatherService;
 import com.expedia.weatherapp.so.ServiceResponse;
 import com.expedia.weatherapp.test.config.WebContextLoader;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = { ViewConfiguration.class}, loader = WebContextLoader.class)
+@ContextConfiguration(classes = { RootConfiguration.class , ViewConfiguration.class}, loader = WebContextLoader.class)
 public class WeatherServiceTest {
 
 	@Autowired

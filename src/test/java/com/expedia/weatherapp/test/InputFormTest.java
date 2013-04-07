@@ -11,12 +11,13 @@ import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
+import com.expedia.weatherapp.config.RootConfiguration;
 import com.expedia.weatherapp.config.ViewConfiguration;
 import com.expedia.weatherapp.form.InputForm;
 import com.expedia.weatherapp.test.config.WebContextLoader;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = {ViewConfiguration.class}, loader = WebContextLoader.class)
+@ContextConfiguration(classes = {RootConfiguration.class , ViewConfiguration.class}, loader = WebContextLoader.class)
 public class InputFormTest {
 	
 	@Autowired
