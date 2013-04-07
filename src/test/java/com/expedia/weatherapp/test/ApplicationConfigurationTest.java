@@ -21,7 +21,7 @@ import com.expedia.weatherapp.test.config.WebContextLoader;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {RootConfiguration.class , ViewConfiguration.class},loader = WebContextLoader.class)
 
-public class ViewConfigurationTest {
+public class ApplicationConfigurationTest {
 	
 	@Autowired
 	ViewResolver viewResolver;
